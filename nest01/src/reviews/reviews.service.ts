@@ -45,6 +45,7 @@ export class ReviewsService {
     return await this.reviewRepository.find({
       where: { product: { id } },
       relations: {
+        
         user: true,
         product: {
           category: true,
