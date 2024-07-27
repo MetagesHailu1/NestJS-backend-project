@@ -19,6 +19,7 @@ export class SerializeInterceptor implements NestInterceptor {
     const now = Date.now();
     return next.handle().pipe(
       map((data: any) => {
+        
         return plainToClass(this.dto, data, { exposeUnsetFields: true });
       }),
     );
