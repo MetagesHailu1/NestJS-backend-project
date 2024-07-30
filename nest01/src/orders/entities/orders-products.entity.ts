@@ -3,7 +3,9 @@ import { OrderEntity } from './order.entity';
 import { ProductEntity } from 'src/products/entities/product.entity';
 
 @Entity({ name: 'orders_products' })
+  
 export class OrdersProductsEntity {
+  
   @PrimaryGeneratedColumn()
   id: number;
 
