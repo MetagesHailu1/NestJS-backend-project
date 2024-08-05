@@ -12,6 +12,7 @@ import { OrdersModule } from 'src/orders/orders.module';
     CategoriesModule,
     forwardRef(() => OrdersModule),
   ],
+  
   controllers: [ProductsController],
   providers: [ProductsService],
   exports: [ProductsService],
